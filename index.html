@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passarinho Voador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Passarinho Voador</h1>
+        <p class="instrucoes">Pressione ESPAÇO ou clique para voar!</p>
+
+        <div class="jogo">
+            <canvas id="canvas" width="360" height="500"></canvas>
+
+            <div id="telaInicial" class="overlay">
+                <h2>Vamos voar?</h2>
+                <p>Desvie dos canos e faça pontos!</p>
+                <button id="botaoJogar">JOGAR</button>
+            </div>
+        </div>
+
+        <div class="painel">
+            <p>Pontuação: <strong id="pontos">0</strong></p>
+            <p>Recorde: <strong id="recorde">0</strong></p>
+        </div>
+
+        <button id="botaoReiniciar" class="reiniciar">Reiniciar jogo</button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

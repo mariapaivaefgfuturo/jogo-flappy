@@ -1,0 +1,129 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: #e8f4f0;
+    font-family: Arial, sans-serif;
+    color: #234536;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 10px;
+    color: #278b43;
+    font-size: 30px;
+}
+
+.instrucoes {
+    margin-bottom: 18px;
+    color: #537568;
+    font-size: 14px;
+}
+
+.jogo {
+    position: relative;
+    width: 100%;
+    border: 5px solid #367c42;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px #244b3025;
+}
+
+canvas {
+    display: block;
+    width: 100%;
+    height: auto;
+    background: #91ded9;
+    touch-action: manipulation;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+    background: #d6fff0b8;
+}
+
+.overlay h2 {
+    color: #247e3b;
+    font-size: 28px;
+    text-shadow: 1px 2px #ffffff;
+}
+
+.overlay p {
+    color: #315b42;
+    font-size: 14px;
+}
+
+button {
+    padding: 12px 28px;
+    border: 2px solid #286d37;
+    border-radius: 6px;
+    background: #75df42;
+    color: #20472a;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px #286d37;
+}
+
+button:hover {
+    background: #9aef6b;
+}
+
+button:active {
+    transform: translateY(3px);
+    box-shadow: 0 1px #286d37;
+}
+
+.painel {
+    display: flex;
+    justify-content: space-around;
+    gap: 12px;
+    margin: 18px 0;
+    padding: 14px;
+    border-radius: 8px;
+    background: #ffffff;
+    box-shadow: 0 3px 10px #244b3015;
+}
+
+.painel p {
+    font-size: 15px;
+}
+
+.painel strong {
+    color: #278b43;
+}
+
+.reiniciar {
+    width: 100%;
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 25px;
+    }
+
+    .painel p {
+        font-size: 13px;
+    }
+}
